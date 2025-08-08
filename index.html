@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', 'Arial', sans-serif;
+            background: linear-gradient(135deg, #ffe6f0 0%, #e0c3fc 100%);
+            margin: 0;
+            padding: 0;
+            color: #4b2e83;
+        }
+
+        h1 {
+            text-align: center;
+            margin-top: 40px;
+            font-size: 2.8em;
+            color: #e75480;
+            text-shadow: 2px 2px 8px #fff0f6, 0 0 10px #e75480;
+            letter-spacing: 2px;
+        }
+
+        hr {
+            border: none;
+            border-top: 2px dashed #e75480;
+            width: 60%;
+            margin: 30px auto;
+        }
+
+        .Picture {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 32px;
+            margin: 40px 0;
+        }
+
+        .Picture>div {
+            background: rgba(255, 255, 255, 0.85);
+            border-radius: 18px;
+            box-shadow: 0 4px 24px rgba(231, 84, 128, 0.15), 0 1.5px 8px #e0c3fc;
+            padding: 18px 16px 12px 16px;
+            text-align: center;
+            width: 260px;
+            transition: transform 0.2s, box-shadow 0.2s;
+            position: relative;
+        }
+
+        .Picture>div:hover {
+            transform: translateY(-8px) scale(1.04) rotate(-2deg);
+            box-shadow: 0 8px 32px rgba(231, 84, 128, 0.25), 0 2px 12px #e0c3fc;
+        }
+
+        .Picture img {
+            border-radius: 12px;
+            border: 3px solid #e75480;
+            margin-bottom: 12px;
+            box-shadow: 0 2px 12px #e0c3fc;
+            width: 90%;
+            height: auto;
+            object-fit: cover;
+        }
+
+        .Picture div>div {
+            font-size: 1.08em;
+            color: #a8326e;
+            margin-top: 8px;
+            font-style: italic;
+        }
+
+        .conclusion {
+            margin: 40px auto 0 auto;
+            max-width: 600px;
+            background: rgba(255, 255, 255, 0.92);
+            border-radius: 16px;
+            box-shadow: 0 2px 16px #e0c3fc;
+            padding: 24px 30px;
+            font-size: 1.2em;
+            color: #4b2e83;
+            text-align: center;
+            line-height: 1.7;
+        }
+
+        /* Hiệu ứng trái tim bay */
+        .hearts {
+            pointer-events: none;
+            position: fixed;
+            left: 0;
+            top: 0;
+            width: 100vw;
+            height: 100vh;
+            z-index: 999;
+        }
+
+        .heart {
+            position: absolute;
+            width: 32px;
+            height: 32px;
+            background: url('https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/72x72/2764.png') no-repeat center/contain;
+            opacity: 0.8;
+            animation: fly 4s linear infinite;
+        }
+
+    </style>
+</head>
+
+<body>
+    <h1>Gửi tặng em iu</h1>
+    <div>Chào em bé của anh. Em từng nói với anh là em rất thích được tặng thiệp handmade nên anh đã chuẩn bị cho em một
+        tấm thiệp handmade nhưng mà không phải theo cách truyền thống hehe :v. Mong em sẽ thấy bất ngờ và thích thú với
+        điều đó. Chúng mình cũng đã yêu nhau được 1 năm rồi em nhỉ. Nó cũng không quá dài, cũng không quá ngắn, tuy
+        nhiên nó lại là cả một hành trình ngập tràn hạnh phúc và vui vẻ đối với anh mặc dù đôi lúc chúng ta có một vài
+        sự không hợp ý hay xích mích. Chúng ta cũng đã trải qua khá nhiều câu chuyện, vui buồn đều đủ, những thứ đó anh
+        đều trân trọng. Một số người họ đưa ra quan điểm rằng thời gian càng trôi đi con người sẽ càng giảm bớt sự trân
+        trọng đối với đối phương. Tuy nhiên với anh, thời gian càng trôi anh lại càng trân trọng, lại càng yêu em hơn.
+        Anh mong rằng chúng ta sẽ luôn bên nhau như hiện tại và cùng nhau trưởng thành hơn và đạt được một số thành tựu
+        cũng như mơ ước của bản thân. Lời thì cũng hết rồi, mình cùng nhau ôn lại những kỉ niệm qua những tấm ảnh chụp
+        chung ở dưới nhé ^^</div>
+    <hr>
+    <div class="Picture">
+        <div class="pic_1">
+            <img src="./assert/pic2.jpg" width="30%" height="50%" alt="Ảnh kỉ niệm 1">
+            <div>Đây là lúc mình mới quen nhau lần đầu nè</div>
+        </div>
+        <div class="pic_2">
+            <img src="./assert/pic1.jpg" width="30%" height="50%" alt="Ảnh kỉ niệm 2">
+            <div>Lần đầu tiên chúng mình chụp ảnh chung</div>
+        </div>
+        <div class="pic_3">
+            <img src="./assert/pic4.jpg" width="30%" height="50%" alt="Ảnh kỉ niệm 2">
+            <div>Bất ngờ chưaa</div>
+        </div>
+        <div class="pic_4">
+            <img src="./assert/pic3.jpg" width="30%" height="50%" alt="Ảnh kỉ niệm 2">
+            <div>Bức ảnh ptb đầu tiên</div>
+        </div>
+        <div class="pic_5">
+            <img src="./assert/pic6.jpg" width="30%" height="50%" alt="Ảnh kỉ niệm 2">
+            <div>Buổi tổ chức sinh nhật ngày một thiên thần ra đời</div>
+        </div>
+        <div class="pic_6">
+            <img src="./assert/pic8.jpg" width="30%" height="50%" alt="Ảnh kỉ niệm 2">
+            <div>Cảm ơn bé vì đã tổ chức sinh nhật cho anh nha</div>
+        </div>
+        <div class="pic_7">
+            <img src="./assert/pic11.jpg" width="30%" height="50%" alt="Ảnh kỉ niệm 2">
+            <div>Lễ bảo vệ đồ án của em iu</div>
+        </div>
+        <div class="pic_8">
+            <img src="./assert/pic12.jpg" width="30%" height="50%" alt="Ảnh kỉ niệm 2">
+            <div>Lễ tốt nghiệp của anh</div>
+        </div>
+    </div>
+    <div class="conclusion">
+        Mong rằng chúng ta sẽ luôn có những bức ảnh đẹp như này để khi nhìn lại chúng ta đã có những
+        kỉ niệm đẹp đẽ như thế nào và từ đấy sẽ là động lực để cố gắng cùng nhau trở nên tốt hơn
+    </div>
+</body>
+
+</html>
